@@ -5,7 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KellyElton.Android", "KellyElton.Android\KellyElton.Android.csproj", "{4EDDBC02-A99B-4BDC-BFD6-BA86732BF1C7}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Com.OneSignal", "lib\OneSignal-Xamarin-SDK-2.0.0\SDK\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.shproj", "{979CB250-E367-491F-9D33-F96B4D6EA8A2}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		lib\OneSignal-Xamarin-SDK-2.0.0\SDK\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems*{4eddbc02-a99b-4bdc-bfd6-ba86732bf1c7}*SharedItemsImports = 4
+		lib\OneSignal-Xamarin-SDK-2.0.0\SDK\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems*{979cb250-e367-491f-9d33-f96b4d6ea8a2}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

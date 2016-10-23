@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Com.OneSignal;
 
 namespace KellyElton.Android
 {
@@ -15,6 +16,8 @@ namespace KellyElton.Android
 
         protected override void OnCreate( Bundle bundle ) {
             base.OnCreate( bundle );
+
+            OneSignal.StartInit( Config.Default.OneSignalAppId, Config.Default.GoogleProjectNumber ).EndInit();
 
             // Set our view from the "main" layout resource
             SetContentView( Resource.Layout.Main );

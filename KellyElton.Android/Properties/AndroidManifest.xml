@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="KellyElton.Android.KellyElton.Android" android:versionCode="1" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="16" />
-  <application android:label="KellyElton.Android"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kellyelton.android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="16" />
+	<permission android:name="kellyelton.android.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="kellyelton.android.permission.C2D_MESSAGE" />
+	<application android:label="kellyelton.android">
+		<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="kellyelton.android" />
+			</intent-filter>
+		</receiver>
+	</application>
 </manifest>
